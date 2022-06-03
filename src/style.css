@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.gray{
+    color: #918e9b;
+}
+.bold{
+    font-weight: bold;
+}
+.logo{
+    width: 100px;
+    padding-left: 10px;
+}
+nav{
+    background-color: azure;
+    padding: 12px 0;
+    box-shadow: 0px 2.98256px 7.456px rgba(0, 0, 0,0.1);
+}
+.grid-container{
+    text-align: center;  
+    padding-top: 3rem;   
+}
+.grid-photo{
+    width: 90%;
+}
+.Hero-container{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.Hero-texts{
+   margin-left: 20px; 
+}
+.Hero-texts > h1{
+    font-size: 30px;
+    letter-spacing: 20px;
+    margin-bottom: 5px;
+    
+}
+.Hero-texts > h4{
+    font-size: 13.5px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    overflow-x: auto;
+}
+
+.card {
+    width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;         
+    display: flex;          
+    flex-direction: column; 
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+}
+
+
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--star {
+    height: 14px;
+}
+
+/* ADD */
+.card--price {
+    margin-top: auto;
+}
+
+.card-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .logo{
+        width: 65px;
+        padding-left: 10px;
+    }
+    nav{
+        background-color: azure;
+        padding: 3px 0;
+        box-shadow: 0px 2.98256px 7.456px rgba(0, 0, 0,0.1);
+    }
+    .grid-container{
+        text-align: center;  
+        padding-top: 3rem;   
+    }
+    .grid-photo{
+        width: 90%;
+    }
+    
+    .Hero-texts{
+        text-align: center;
+    }
+    .Hero-texts > h1{
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+        
+    }
+    .Hero-texts > h4{
+        font-size: 13.5px;
+    }
+    .cards-list {
+        
+        flex-direction: column;
+        align-items: center;
+        
+    } 
+  }
